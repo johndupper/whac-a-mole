@@ -1,45 +1,60 @@
 body {
-  background-image: url(http://tinyurl.com/ztn5n2n);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50%;
-  font-family: 'Bubblegum Sans', cursive; }
+    background-image: url(http://tinyurl.com/ztn5n2n);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50%;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
 h1, button {
-  display: block;
-  text-align: center;
-  margin: 0.5rem auto; }
+    display: block;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
 h1 {
-  font-size: 3rem; }
+    font-size: 3rem;
+}
+
 button {
-  font-family: 'Bubblegum Sans', cursive;
-  background-color: #f00;
-  border: inset 1px solid;
-  padding: 0.35em;
+    font-family: 'Bubblegum Sans', cursive;
+    background-color: #f00;
+    border: inset 1px solid;
+    padding: 0.35em;
 }
+
 #container {
-  border: 1px solid yellow;
-  position: fixed;
-  bottom: 1rem;
-  width: 100%;
-  display: flex;
-  flex-wrap: no-wrap;
-  justify-content: space-around; }
-.hole {
-  height: 2rem;
-  width: 40rem;
-    padding-top: 0.5rem;
-  margin-bottom: 5rem;
-  background-color: #684505;
-  border: 1px solid brown;
-  border-radius: 50%;
-  box-shadow: inset 0px 10px 10px #312204;
-  text-align: center; }
-.mole {
-  border: 1px solid white;
-  height: 7rem;
-  width: 90%;
-    padding-bottom: 1rem;
+    position: fixed;
+    bottom: 1rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: no-wrap;
+    justify-content: space-around;
 }
+
+.hole {
+    position: relative;
+    height: 2rem;
+    width: 30vw;
+    padding-top: 0.5rem;
+    margin-bottom: 5rem;
+    background-color: #684505;
+    border: 1px solid brown;
+    border-radius: 50%;
+    box-shadow: inset 0px 10px 10px #312204;
+    text-align: center;
+}
+
+.mole {
+    position: absolute;
+    left: 50%;
+    top: -30%;
+    transform: translate(-50%,-50%);
+    height: 7rem;
+    width: 25vw;
+    max-width: 200px;
+}
+
 .selected {
   display: none;
 }

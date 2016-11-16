@@ -1,5 +1,6 @@
 var points = 0,
     gameInProgress = false;
+
 // button click
 $('button').click(function() {
   gameInProgress = true;
@@ -11,17 +12,21 @@ $('button').click(function() {
   }, 500); // speed of play
   startTime();
 });
+
 // return 1-3 at random
 function randomNumber() {
   return Math.floor(Math.random() * 3) + 1;
 }
+
 // animate random div
 function animateHole(num) {
   $('.mole').addClass('selected').removeClass('animated tada');
   $('#mole' + num).addClass('animated tada').removeClass('selected');
 }
+
 // timer
 var time = 10;                  // sets game duration
+
 function timer() {
   if (time > 0) {
     time -= 1;
