@@ -26,17 +26,19 @@ button {
   justify-content: space-around; }
 .hole {
   height: 2rem;
-  width: 50rem;
+  width: 40rem;
+    padding-top: 0.5rem;
+  margin-bottom: 5rem;
   background-color: #684505;
   border: 1px solid brown;
   border-radius: 50%;
   box-shadow: inset 0px 10px 10px #312204;
   text-align: center; }
 .mole {
-    display: none;          /* temporary */
   border: 1px solid white;
-  height: 5rem;
+  height: 7rem;
   width: 90%;
+    padding-bottom: 1rem;
 }
 .selected {
   display: none;
